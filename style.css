@@ -63,7 +63,7 @@ nav {
 }
 
 .logo {
-	color: rgb(206, 206, 206);
+	color: white;
 	letter-spacing: 3px;
 	font-size: 25px;
 }
@@ -75,7 +75,7 @@ nav {
 }
 
 .nav-links a {
-	color: rgb(206, 206, 206);
+	color: white;
 	text-decoration: none;
 	letter-spacing: 2px;
 	font-weight: bold;
@@ -84,7 +84,7 @@ nav {
 }
 
 .nav-links a:hover {
-	background-color: rgb(206, 206, 206);
+	background-color: white;
 	color: black;
 }
 
@@ -96,33 +96,32 @@ nav {
 .burger div {
 	width: 25px;
 	height: 3px;
-	background-color: rgb(206, 206, 206);
+	background-color: white;
 	margin: 5px;
 	transition: all 0.3s ease;
 }
 
 html,
 body {
-	height: 100vh;
+	height: 100%;
 	position: relative;
-	background: -moz-linear-gradient(-45deg, #d5eef8 20%, #f6c2c2 20%, #f6c2c2 80%, #a1dbef 80%); 
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #d5eef8), color-stop(20%, #f6c2c2), color-stop(80%, #f6c2c2), color-stop(80%, #a1dbef)); 
-	background: -webkit-linear-gradient(-45deg, #d5eef8 20%, #f6c2c2 20%, #f6c2c2 80%, #a1dbef 80%); 
-	background: -o-linear-gradient(-45deg, #d5eef8 20%, #f6c2c2 20%, #f6c2c2 80%, #a1dbef 80%);
-	background: -ms-linear-gradient(-45deg, #d5eef8 20%, #f6c2c2 20%, #f6c2c2 80%, #a1dbef 80%);
-	background: linear-gradient(145deg, #d5eef8 20%, #f6c2c2 20%, #f6c2c2 80%, #a1dbef 80%); 
+	background: -moz-linear-gradient(-45deg, #41729F 20%, #C3E0E5 20%, #C3E0E5 80%, #5885AF 80%); 
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #41729F), color-stop(20%, #C3E0E5), color-stop(80%, #C3E0E5), color-stop(80%, #5885AF)); 
+	background: -webkit-linear-gradient(-45deg, #41729F 20%, #C3E0E5 20%, #C3E0E5 80%, #5885AF 80%); 
+	background: -o-linear-gradient(-45deg, #41729F 20%, #C3E0E5 20%, #C3E0E5 80%, #5885AF 80%);
+	background: -ms-linear-gradient(-45deg, #41729F 20%, #C3E0E5 20%, #C3E0E5 80%, #5885AF 80%);
+	background: linear-gradient(145deg, #41729F 20%, #C3E0E5 20%, #C3E0E5 80%, #5885AF 80%); 
 	
-	overflow: hidden;
 }
 
 .wrapper {
 	position : none;
-	background: linear-gradient(45deg, #d5eef8 20%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, #a1dbef 80%); 
+	background: linear-gradient(45deg, #41729F 20%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, #5885AF 80%); 
 	height: 100%;
 	width: 100%;
 }
   
-  .inside {
+.inside {
 	top: 50%;
 	left: 50%;
 	position: absolute;
@@ -137,13 +136,13 @@ body {
  	-o-box-shadow: 0px 16px 35px -7px #242424;
 }
   
-  .text {
+.text {
 	position: absolute;
 	text-align: center;
-	color: rgba(140, 140, 130, 1);  
+	color: black;  
 	font-size: 15px;
-	top: 40%;
-	left: 35%;
+	top: 38%;
+	left: 30%;
 	transform: translate(-20%,-40%);
 }
 
@@ -176,24 +175,26 @@ h3.blurb {
 	text-align: center;
 	width: 185px;
 	height: 40px;
-	color: rgba(140, 140, 130, 1);
+	color: white;
 	border-radius: 3px;
-	border: 3px solid rgba(140, 140, 130, 1);
+	border: 3px solid black;
 	position: relative;
-	background: none;
+	background: black;
 }
 
 .home-button::before,
 .home-button::after {
-	background: rgba(140, 140, 130, 1);
+	background: white;
 	content: '';
 	position: absolute;
 	z-index: -1;
 }
 
-.home-button:hover{
-	color: white;
+.home-button:hover {
+	color: black;
 	cursor: pointer;
+	background: white;
+	border: 3px solid black;
 }
 
 .home-button::before {
@@ -204,7 +205,7 @@ h3.blurb {
 }
 
 .home-button::after {
-	background: white;
+	background: black;
 	height: 100%;
 	left: 0;
 	top: 0;
@@ -218,16 +219,97 @@ h3.blurb {
 	width: 0;
 }
 
+.my-work {
+	display: grid;
+	grid-template-columns: 400px 430px;
+	grid-template-rows: 450px 450px;
+	justify-content: center;
+	text-align: center;
+	grid-gap: 10px;
+}
 
+.websites {
+	background-color: rgb(176, 186, 197);
+	text-align: center;
+	margin-top: 15px;
+}
 
+.web-links {
+	margin: 10px;
+	background-color: rgb(176, 186, 197);
+	height: 35px;
+	width: 300px;
+	padding-top: 10px;
+}
 
+.websites.web1 {
+	padding-top: 15px;
+}
 
+.web1 img {
+	height: 460px;
+	width: 350px;
+	border: black 1px solid;
+	border-bottom: black 2px solid;
+}
+
+.websites.web2 {
+	height: 20px;
+	width: 300px;
+	align-self: center;
+	margin-left: 65px;
+	background-color: #C3E0E5;
+}
+
+.websites.web3 {
+	grid-area: 2/2/3/3;
+	height: 300px;
+	width: 440px;
+	padding-top: 15px;
+}
+
+.websites.web3 img {
+	height: 330px;
+	width: 400px;
+	border: black 3px solid;
+}
+
+.websites.web4 {
+	height: 20px;
+	width: 300px;
+	background-color: #C3E0E5;
+	align-self: center;
+
+}
+
+.project-links {
+	font-family: 'Poppins', sans-serif;
+	color: #5885AF;
+}
+
+.project-links a {
+	padding-top: 10px;
+}
+
+.GitHub {
+	margin: 10px;
+	background-color: rgb(176, 186, 197);
+	height: 35px;
+	width: 300px;
+	padding-top: 10px;
+}
+
+.GitHub-links {
+	font-family: 'Poppins', sans-serif;
+	color: #5885AF;
+} 
 
 @media screen and (max-width: 768px) and (min-width: 300px) {
 	
 	body {
+		position: relative;
+		background: linear-gradient(145deg, rgb(176, 186, 197) 20%, #a1dbef 20%, #a1dbef 80%, rgb(176, 186, 197) 80%);
 		overflow-x: hidden;
-		position: fixed;
 	}
 
 	h1.title {
@@ -247,6 +329,7 @@ h3.blurb {
 		width: 45%;
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in;
+		z-index: 1;
 	}
 
 	.nav-links li {
@@ -289,5 +372,62 @@ h3.blurb {
 		background: black;
 		color: white;
 		position: unset;
+		margin-bottom: 17px;
+		font-size: 13px;
+		width: 144px;
+		height: 33px;
 	}
+
+	.home-button::after {
+		background: none;
+	}
+
+	.inside {
+		top: 53%;
+		left: 47%;
+		height: 46%;
+    	width: 56%;
+	}
+
+	.text {
+		top: 42%;
+    	left: 10%;
+		width: 145%;
+	}
+
+	h2.home-minititle {
+		font-size: 16px;
+		margin: 0px;
+		padding: 0px;
+		margin-top: 15px;
+	}
+
+	h3.blurb {
+		font-size: 16px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.my-work {
+		display: table-caption;
+		width: 112%;
+		text-align: center;
+		margin: 15px;
+	}
+
+	.websites {
+		background-color: white;
+		padding-top: 17px;
+	}
+
+	.websites.web1 img {
+		height: 350px;
+		margin-bottom: 15px;
+	}
+
+	.websites.web2 img {
+		height: 193px;
+		width: 263px;
+	}
+
 }
