@@ -309,12 +309,15 @@ h3.blurb {
 	body {
 		position: relative;
 		background: linear-gradient(145deg, rgb(176, 186, 197) 20%, #a1dbef 20%, #a1dbef 80%, rgb(176, 186, 197) 80%);
-		overflow-x: hidden;
 	}
 
 	h1.title {
 		margin: 3px;
 		margin-left: 10px;
+	}
+
+	.header {
+		overflow: hidden;
 	}
 
 	.nav-links {
