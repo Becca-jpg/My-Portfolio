@@ -306,11 +306,6 @@ h3.blurb {
 
 @media screen and (max-width: 768px) and (min-width: 300px) {
 	
-	html, body {
-		overflow-x: hidden;
-		overflow-y: scroll;
-	}
-
 	body {
 		background: linear-gradient(145deg, rgb(176, 186, 197) 20%, #a1dbef 20%, #a1dbef 80%, rgb(176, 186, 197) 80%);
 	}
