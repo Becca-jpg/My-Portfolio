@@ -307,7 +307,7 @@ h3.blurb {
 @media screen and (max-width: 768px) and (min-width: 300px) {
 	
 	html, body {
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 
 	body {
@@ -319,9 +319,6 @@ h3.blurb {
 		margin-left: 10px;
 	}
 
-	.header {
-		overflow: hidden;
-	}
 
 	.nav-links {
 		position: absolute;
