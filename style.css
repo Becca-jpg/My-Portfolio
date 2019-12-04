@@ -315,6 +315,9 @@ h3.blurb {
 		margin-left: 10px;
 	}
 
+	nav {
+		position: fixed;
+	}
 
 	.nav-links {
 		position: fixed;
@@ -408,25 +411,67 @@ h3.blurb {
 	}
 
 	.my-work {
-		display: table-caption;
-		width: 112%;
 		text-align: center;
-		margin: 15px;
+		display: block;
+		padding-top: 75px;
 	}
 
 	.websites {
-		background-color: white;
-		padding-top: 17px;
+		background-color: lightslategray;
+		margin-top: 15px;
+		margin: 10px
+	}
+
+	.web-links {
+		background-color: lightslategrey;
+	}
+
+	.project-links {
+		color: #C3E0E5;
+	}
+
+	.GitHub {
+		background-color: lightslategrey;
+	}
+
+	.GitHub-links {
+		color: #C3E0E5;
+	}
+
+	.websites.web1 {
+		height: 392px;
+		width: 96%;
+	}
+
+	.websites.web2 {
+		margin-left: 0px;
+		height: auto;
+		width: auto;
+		background: none;
+		margin-top: 40px;
 	}
 
 	.websites.web1 img {
-		height: 350px;
-		margin-bottom: 15px;
+		height: 400px;
+		width: 92%;
 	}
 
-	.websites.web2 img {
-		height: 193px;
-		width: 263px;
+	.websites.web3 {
+		height: 250px;
+		width: 93%;
+	}
+
+	.websites.web3 img {
+		height: 245px;
+		width: 267px;
+	}
+
+	.websites.web4 {
+		margin-left: 0px;
+		height: auto;
+		width: auto;
+		background: none;
+		margin-top: 28px;
 	}
 
 }
