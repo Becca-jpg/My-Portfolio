@@ -60,6 +60,7 @@ nav {
 	min-height: 10vh;
 	font-family: 'Poppins', sans-serif;
 	background-color: black;
+	z-index: 100;
 }
 
 .logo {
@@ -72,6 +73,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	width: 35%;
+	z-index: 100;
 }
 
 .nav-links a {
@@ -81,11 +83,13 @@ nav {
 	font-weight: bold;
 	font-size: 14px;
 	padding: 14px 16px;
+	z-index: 100;
 }
 
 .nav-links a:hover {
 	background-color: white;
 	color: black;
+	z-index: 100;
 }
 
 .burger {
@@ -236,7 +240,6 @@ h3.blurb {
 
 .web-links {
 	margin: 10px;
-	background-color: rgb(176, 186, 197);
 	height: 35px;
 	width: 300px;
 	padding-top: 10px;
@@ -258,7 +261,7 @@ h3.blurb {
 	width: 300px;
 	align-self: center;
 	margin-left: 65px;
-	background-color: #C3E0E5;
+	background: none;
 }
 
 .websites.web3 {
@@ -277,8 +280,8 @@ h3.blurb {
 .websites.web4 {
 	height: 20px;
 	width: 300px;
-	background-color: #C3E0E5;
 	align-self: center;
+	background: none;
 
 }
 
@@ -293,7 +296,6 @@ h3.blurb {
 
 .GitHub {
 	margin: 10px;
-	background-color: rgb(176, 186, 197);
 	height: 35px;
 	width: 300px;
 	padding-top: 10px;
@@ -303,6 +305,57 @@ h3.blurb {
 	font-family: 'Poppins', sans-serif;
 	color: #5885AF;
 } 
+
+.project-button {
+	text-decoration: none;
+	color: white;
+	position: relative;
+	display: inline-block;
+	letter-spacing: 0.1em;
+	border: 2px solid white;
+	box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.12);
+	transition: 250ms ease-out;
+	font-size: 1.2rem;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: lightslategray;
+}
+
+.project-button:hover {
+	box-shadow: 0 4px 4px (0, 0, 0, 0.22);
+}
+
+.project-button span, 
+.project-button::after {
+	position: relative;
+	background-color: white;
+	color: lightslategray;
+}
+
+.project-button::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: calc(100% + 2px);
+	height: calc(100% + 2px);
+	top: -1px;
+	left: -1px;
+	background: rgba(255, 255, 255, 0.411);
+	transform: scaleX(0);
+	transform-origin: bottom right;
+	transition: transform 0.2s ease-out;
+	color: lightslategray;
+}
+
+.project-button:hover span {
+	color: lightslategray;
+}
+
+.project-button:hover::before {
+	transform: scale(1);
+	transform-origin: bottom left;
+	color: lightslategray;
+}
 
 @media screen and (max-width: 768px) and (min-width: 300px) {
 	
@@ -322,7 +375,7 @@ h3.blurb {
 	.nav-links {
 		position: fixed;
 		right: 0px;
-		height: 92vh;
+		height: 90vh;
 		top: 10vh;
 		background-color: black;
 		display: flex;
@@ -332,6 +385,7 @@ h3.blurb {
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in;
 		z-index: 1;
+		justify-content: space-evenly;
 	}
 
 	.nav-links li {
