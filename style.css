@@ -308,6 +308,7 @@ h3.blurb {
 	
 	html, body {
 		overflow-x: hidden;
+		overflow-y: scroll;
 	}
 
 	body {
