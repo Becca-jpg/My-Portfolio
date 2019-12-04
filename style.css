@@ -317,7 +317,7 @@ h3.blurb {
 
 
 	.nav-links {
-		position: absolute;
+		position: fixed;
 		right: 0px;
 		height: 92vh;
 		top: 10vh;
