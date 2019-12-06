@@ -18,13 +18,13 @@
                 <a href="#">Home</a>
             </li>
             <li>
-                <a href="#">About Me</a>
+                <a href="#anchor">About Me</a>
             </li>
             <li>
                 <a href="Projects/index.html">Projects</a>
             </li>
             <li>
-                <a href="Contact/index.html">Contact Me</a>
+                <a href="#anchor2">Contact Me</a>
             </li>
         </ul>
         <div class="burger">
@@ -35,14 +35,52 @@
     </nav>
     <div class="wrapper">
         <div class="inside">
-                <span class="text">
-                    <h2 class="home-minititle">Hi, I'm Becca, a front end web developer based in Chicago.</h2><br>
-                    <h3 class="blurb">I have experience in designing and coding websites and have worked with HTML, CSS, and some JavaScript. I completed a code bootcamp and I am looking for new, fun projects to take on to gain more experience and learn new things. I'm open for both freelancing work as well as settling down with a company long term.</h3><br>
+            <span class="text">
+                <h2 class="home-minititle">Hi, I'm Becca, a front end web developer based in Chicago.</h2><br>
+                <h3 class="blurb">I have experience in designing and coding websites and have worked with HTML, CSS, and some JavaScript. I completed a code bootcamp and I am looking for new, fun projects to take on to gain more experience and learn new things. I'm open for both freelancing work as well as settling down with a company long term.</h3><br>
                 
-                    <a href="/Contact/index.html">
-                        <button class="home-button">Let's Work Together</button>
-                    </a>
-                </span>
+                <a href="/Contact/index.html">
+                    <button class="home-button">Let's Work Together</button>
+                </a>
+            </span>
+        </div>
+        <div class="about" id="anchor">
+            <h2 class="home-minititle"><u>About Me</u></h2><br>
+            <p> I attended General Assembly in Chicago for their Front End Web Development bootcamp. There I learned how to build a website from scratch and the basics of HTML, CSS, and JavaScript. We also spent time learning about GitHub and how to use it to benefit ourselves as well as others.</p><br>
+            
+            <p>Our final project was to build a complete website and have version 1 ready by the last day. I chose to make a website for a colleage of mine who runs a small make-up buisness. This allowed me to get an idea of what it is like to build a website for a client that solves the problems they face and looks the way they want it to. Now, I feel ready to take on new projects with new clients.</p><br>
+            
+            <p>I have completed my bootcamp but my learning is far from over. I am still studying code on the side, especially JavaScript, and I want to continue taking on new projects so I can apply all the skills I have to real world problems.</p><br>
+            
+            <div class="credentials">
+                <a href="https://docs.google.com/document/d/1KQQRWAhk1dnTijoQNmJAnrLMGMXdBdThDrIaVH04D68/edit?usp=sharing" target="_blank">
+                    <button class="home-button">My Resume</button> 
+                </a>
+                <a href="https://drive.google.com/file/d/1pNy5Ljz3VgsXl-6O3yLHHn_8CpbGFu1N/view?usp=sharing" target="_blank">
+                    <button class="home-button">General Assembly Certificate</button>
+                </a>
+            </div>
+        </div>
+        <div class="contact" id="anchor2">
+            <h2 class="home-minititle"><u>Contact Me</u></h2><br>
+            <div class="forms">
+                <form name="contact" method="post">
+                    
+                    <label for="user-name"></label>
+                    <input type="text" name="text" id="user-name" placeholder="Your Name"><br>
+
+                    <label for="user-email"></label>
+                    <input type="email" name="email" id="user-email" placeholder="Your Email"><br>
+
+                    <textarea name="textarea" id="user-text" cols="47" rows="10" placeholder="Your Message Here"></textarea><br>
+
+                    <label for="user-submit"></label>
+                    <input type="submit" value="submit" id="user-submit" class="home-button"><br>
+                </form>
+            </div>
+        </div>
+        <div class="space">
+            <p class="space">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos natus facere hic reprehenderit ipsa maxime ratione, corrupti, aliquam culpa laborum rem tempore aperiam quam consequatur velit adipisci quia! Animi, quam.</p>
         </div>
     </div>
     <script src="app.js"></script>

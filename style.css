@@ -105,6 +105,10 @@ nav {
 	transition: all 0.3s ease;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 html,
 body {
 	height: 100%;
@@ -115,8 +119,8 @@ body {
 	background: -o-linear-gradient(-45deg, #41729F 20%, #C3E0E5 20%, #C3E0E5 80%, #5885AF 80%);
 	background: -ms-linear-gradient(-45deg, #41729F 20%, #C3E0E5 20%, #C3E0E5 80%, #5885AF 80%);
 	background: linear-gradient(145deg, #41729F 20%, #C3E0E5 20%, #C3E0E5 80%, #5885AF 80%); 
-	
 }
+
 
 .wrapper {
 	position : none;
@@ -175,7 +179,7 @@ h3.blurb {
 
 .home-button {
 	font-family: 'Poppins', sans-serif;
-	font-size: 16px;
+	font-size: 13px;
 	text-align: center;
 	width: 185px;
 	height: 40px;
@@ -184,6 +188,7 @@ h3.blurb {
 	border: 3px solid black;
 	position: relative;
 	background: black;
+	margin: 3px;
 }
 
 .home-button::before,
@@ -223,6 +228,87 @@ h3.blurb {
 	width: 0;
 }
 
+.about {
+	background-color: white;
+	color: black;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	width: 60%;
+	top: 107%;
+	left: 20%;
+	font-size: 1.15rem;
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 15px;
+	box-shadow: 0px 16px 35px -7px #242424;
+}
+
+.contact {
+	position: relative;
+	top: 157%;
+}
+
+.forms {
+	background-color: white;
+	position: relative;
+	display: contents;
+	text-align: center;
+}
+
+form {
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	text-align: center;
+}
+
+#user-name {
+	margin-bottom: 10px;
+	height: 30px;
+	width: 300px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	box-shadow: 0px 16px 35px -7px #242424;
+	border: solid black 1px;
+}
+
+#user-email {
+	margin-bottom: 10px;
+	height: 30px;
+	width: 300px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	box-shadow: 0px 16px 35px -7px #242424;
+	border: 1px solid black;
+}
+
+#user-text {
+	margin-bottom: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	box-shadow: 0px 16px 35px -7px #242424;
+}
+
+#user-submit {
+	height: 35px;
+	width: 130px;
+	font-family: 'Poppins', sans-serif;
+	box-shadow: 0px 16px 35px -7px #242424;
+}
+
+.credentials {
+	display: inline-flex;
+}
+
+div.space {
+	color: transparent;
+	position: relative;
+	top: 173%;
+}
+
+p.space {
+	color: transparent;
+}
+
 .my-work {
 	display: grid;
 	grid-template-columns: 400px 430px;
@@ -236,6 +322,7 @@ h3.blurb {
 	background-color: rgb(176, 186, 197);
 	text-align: center;
 	margin-top: 15px;
+	border: black solid 2px;
 }
 
 .web-links {
@@ -262,6 +349,7 @@ h3.blurb {
 	align-self: center;
 	margin-left: 65px;
 	background: none;
+	border: none;
 }
 
 .websites.web3 {
@@ -282,7 +370,7 @@ h3.blurb {
 	width: 300px;
 	align-self: center;
 	background: none;
-
+	border: none;
 }
 
 .project-links {
@@ -319,6 +407,7 @@ h3.blurb {
 	border-radius: 4px;
 	cursor: pointer;
 	background-color: lightslategray;
+	padding: 5px;
 }
 
 .project-button:hover {
@@ -356,6 +445,7 @@ h3.blurb {
 	transform-origin: bottom left;
 	color: lightslategray;
 }
+
 
 @media screen and (max-width: 768px) and (min-width: 300px) {
 	
@@ -430,8 +520,8 @@ h3.blurb {
 		position: unset;
 		margin-bottom: 17px;
 		font-size: 13px;
-		width: 144px;
-		height: 33px;
+		width: unset;
+		height: unset;
 	}
 
 	.home-button::after {
@@ -452,16 +542,48 @@ h3.blurb {
 	}
 
 	h2.home-minititle {
-		font-size: 16px;
-		margin: 0px;
-		padding: 0px;
+		font-size: 20px;
+		padding: 5px;
 		margin-top: 15px;
+		background-color: white;
+		display: inline-flex;
 	}
 
 	h3.blurb {
 		font-size: 16px;
 		margin: 0px;
 		padding: 0px;
+	}
+
+	.about {
+		width: 89%;
+		left: 5%;
+	}
+
+	.credentials {
+		display: unset;
+	}
+
+	.contact {
+		text-align: center;
+	}
+
+	#user-name {
+		height: 30px;
+		width: 260px;
+		font-size: 16px;
+	}
+
+	#user-email {
+		height: 30px;
+		width: 260px;
+		font-size: 16px;
+	}
+
+	#user-text {
+		height: 135px;
+		width: 260px;
+		font-size: 16px;
 	}
 
 	.my-work {
@@ -476,20 +598,13 @@ h3.blurb {
 		margin: 10px
 	}
 
-	.web-links {
-		background-color: lightslategrey;
-	}
-
-	.project-links {
-		color: #C3E0E5;
+	.project-button {
+		padding-bottom: 10px;
 	}
 
 	.GitHub {
-		background-color: lightslategrey;
-	}
-
-	.GitHub-links {
-		color: #C3E0E5;
+		height: unset;
+		width: unset;
 	}
 
 	.websites.web1 {
@@ -507,7 +622,7 @@ h3.blurb {
 
 	.websites.web1 img {
 		height: 400px;
-		width: 92%;
+		width: 98%;
 	}
 
 	.websites.web3 {
@@ -526,6 +641,5 @@ h3.blurb {
 		width: auto;
 		background: none;
 		margin-top: 28px;
-	}
-
+	}	
 }
