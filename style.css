@@ -446,8 +446,645 @@ p.space {
 	color: lightslategray;
 }
 
+@media screen and (min-width: 1400px) {
 
-@media screen and (max-width: 768px) and (min-width: 300px) {
+	.logo {
+		font-size: 32px;
+	}
+
+	.nav-links a {
+		font-size: 18px;
+	}
+
+	h2.home-minititle {
+		font-size: 30px;
+	}
+
+	h3.blurb {
+		font-size: 23px;
+	}
+
+	.home-button {
+		font-size: 17px;
+		width: 190px;
+		height: 55px;
+	}
+
+	.about {
+		font-size: 23px;
+	}
+
+	#user-name {
+		width: 400px;
+		height: 40px;
+	}
+
+	#user-email {
+		width: 400px;
+		height: 40px;
+	}
+
+	#user-text {
+		font-size: 17px;
+	}
+}
+
+@media screen and (min-width: 1012px) and (max-width: 1390){
+	.nav-links {
+		width: 43%;
+	}
+
+	.inside {
+		height: 60%;
+	}
+}
+
+@media screen and (min-width: 761px) and (max-width: 1010px) {
+	
+	body {
+		background: linear-gradient(145deg, rgb(176, 186, 197) 20%, #a1dbef 20%, #a1dbef 80%, rgb(176, 186, 197) 80%);
+	}
+
+	h1.title {
+		margin: 3px;
+		margin-left: 10px;
+	}
+
+	.logo {
+		font-size: 35px
+	}
+
+	.nav-links {
+		position: fixed;
+		right: 0px;
+		height: 90vh;
+		top: 10vh;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 45%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		z-index: 1;
+		justify-content: space-evenly;
+	}
+
+	.nav-links a {
+		font-size: 27px;
+	}
+
+	.nav-links li {
+		opacity: 0;
+	}
+
+	.burger {
+		display: block;
+		margin-right: 10px;
+	}
+
+	.burger div {
+		width: 40px;
+		height: 5px;
+		margin: 4px;
+	}
+
+	.nav-active {
+		transform: translateX(0%);
+	}
+
+	@keyframes navLinkFade {
+		from{
+			opacity: 0;
+			transform: translateX(50px);
+		}
+		to{ 
+			opacity: 1;
+			transform: translateX(0px);
+		}
+	}
+
+	.toggle .line1 {
+		transform: rotate(-45deg) translate(-5px,6px);
+	}
+
+	.toggle .line2 {
+		opacity: 0;
+	}
+
+	.toggle .line3 {
+		transform: rotate(45deg) translate(-5px,-6px);
+	}
+	.home-button {
+		background: black;
+		color: white;
+		position: unset;
+		margin-bottom: 17px;
+		font-size: 14px;
+	}
+
+	.home-button::after {
+		background: none;
+	}
+
+	.inside {
+		height: 38%;
+	}
+
+	.text {
+		width: 133%;
+		height: 106%;
+		top: 40%;
+		left: 9%;
+	}
+
+	h2.home-minititle {
+		font-size: 34px;
+	}
+
+	h3.blurb {
+		font-size: 26px;
+	}
+
+	.about {
+		font-size: 25px;
+		width: 78%;
+		left: 11%;
+	}
+
+	.home-button {
+		width: 170px;
+		height: 60px;
+		font-size: 18px;
+	}
+
+	#user-name {
+		height: 35px;
+		width: 430px;
+		font-size: 23px;
+	}
+
+	#user-email {
+		height: 35px;
+		width: 430px;
+		font-size: 23px;
+	}
+
+	#user-text {
+		font-size: 22px;
+	}
+
+	#user-submit {
+		height: 50px;
+		width: 135px;
+		font-size: 21px;
+	}
+
+	.websites.web1 {
+		height: 390px;
+		width: 94%;
+	}
+
+	.websites.web1 img {
+		height: 400px;
+		width: 98%;
+	}
+
+	.websites.web3 {
+		height: 250px;
+		width: 93%;
+	}
+
+	.websites.web3 img {
+		height: 250px;
+		width: 315px;
+	}
+
+	.web-links {
+		width: unset;
+	}
+
+	.GitHub {
+		width: unset;
+	}
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 760px) {
+	
+	body {
+		background: linear-gradient(145deg, rgb(176, 186, 197) 20%, #a1dbef 20%, #a1dbef 80%, rgb(176, 186, 197) 80%);
+	}
+
+	h1.title {
+		margin: 3px;
+		margin-left: 10px;
+	}
+
+	nav {
+		position: fixed;
+	}
+
+	.logo {
+		font-size: 24px
+	}
+
+	.nav-links {
+		position: fixed;
+		right: 0px;
+		height: 90vh;
+		top: 10vh;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 45%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		z-index: 1;
+		justify-content: space-evenly;
+	}
+
+	.nav-links a {
+		font-size: 20px;
+	}
+
+	.nav-links li {
+		opacity: 0;
+	}
+
+	.burger {
+		display: block;
+		margin-right: 10px;
+	}
+
+	.nav-active {
+		transform: translateX(0%);
+	}
+
+	@keyframes navLinkFade {
+		from{
+			opacity: 0;
+			transform: translateX(50px);
+		}
+		to{ 
+			opacity: 1;
+			transform: translateX(0px);
+		}
+	}
+
+	.toggle .line1 {
+		transform: rotate(-45deg) translate(-5px,6px);
+	}
+
+	.toggle .line2 {
+		opacity: 0;
+	}
+
+	.toggle .line3 {
+		transform: rotate(45deg) translate(-5px,-6px);
+	}
+	.home-button {
+		background: black;
+		color: white;
+		position: unset;
+		margin-bottom: 17px;
+		font-size: 14px;
+	}
+
+	.home-button::after {
+		background: none;
+	}
+
+	.inside {
+		top: 50%;
+    	left: 47%;
+    	height: 42%;
+    	width: 56%;
+	}
+
+	.text {
+		top: 41%;
+		left: 5%;
+		width: 163%;
+	}
+
+	h2.home-minititle {
+		font-size: 27px;
+	}
+
+	h3.blurb {
+		font-size: 23px;
+	}
+
+	.home-button {
+		font-size: 17px;
+		width: 160px;
+		height: 53px;
+	}
+
+	.about {
+		width: 90%;
+		top: 107%;
+		left: 5%;
+		font-size: 1.4rem;
+	}
+
+	#user-name {
+		height: 40px;
+		width: 320px;
+		font-size: 20px;
+	}
+
+	#user-email {
+		height: 40px;
+		width: 320px;
+		font-size: 20px;
+	}
+
+	#user-text {
+		font-size: 20px;
+		width: 350px;
+		height: 200px;
+	}
+
+	#user-submit {
+		height: 50px;
+		width: 145px;
+	}
+
+	.my-work {
+		text-align: center;
+		display: block;
+		padding-top: 75px;
+		justify-content: center;
+	}
+
+	.websites {
+		background-color: lightslategray;
+		margin-top: 15px;
+		margin: 10px
+	}
+
+	.project-button {
+		padding-bottom: 10px;
+	}
+
+	.GitHub {
+		height: unset;
+		margin-left: 30px;
+	}
+
+	.websites.web1 {
+		height: 392px;
+		width: 94%;
+		margin-top: 30px;
+	}
+
+	.websites.web2 {
+		margin-left: 32px;
+		height: auto;
+		background: none;
+		margin-top: 40px;
+	}
+
+	.web-links {
+		margin-left: 30px;
+	}
+
+	.websites.web1 img {
+		height: 400px;
+		width: 90%;
+	}
+
+	.websites.web3 {
+		height: 250px;
+		width: 93%;
+	}
+
+	.websites.web3 img {
+		height: 250px;
+		width: 315px;
+	}
+
+	.websites.web4 {
+		margin-left: 26px;
+		height: auto;
+		width: auto;
+		background: none;
+		margin-top: 28px;
+	}	
+
+}
+
+@media screen and (min-width: 371px) and (max-width: 400px) {
+	
+	body {
+		background: linear-gradient(145deg, rgb(176, 186, 197) 20%, #a1dbef 20%, #a1dbef 80%, rgb(176, 186, 197) 80%);
+	}
+
+	h1.title {
+		margin: 3px;
+		margin-left: 10px;
+	}
+
+	nav {
+		position: fixed;
+	}
+
+	.logo {
+		font-size: 30px
+	}
+
+	.nav-links {
+		position: fixed;
+		right: 0px;
+		height: 90vh;
+		top: 10vh;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 45%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		z-index: 1;
+		justify-content: space-evenly;
+	}
+
+	.nav-links a {
+		font-size: 20px;
+	}
+
+	.nav-links li {
+		opacity: 0;
+	}
+
+	.burger {
+		display: block;
+		margin-right: 10px;
+	}
+
+	.nav-active {
+		transform: translateX(0%);
+	}
+
+	@keyframes navLinkFade {
+		from{
+			opacity: 0;
+			transform: translateX(50px);
+		}
+		to{ 
+			opacity: 1;
+			transform: translateX(0px);
+		}
+	}
+
+	.toggle .line1 {
+		transform: rotate(-45deg) translate(-5px,6px);
+	}
+
+	.toggle .line2 {
+		opacity: 0;
+	}
+
+	.toggle .line3 {
+		transform: rotate(45deg) translate(-5px,-6px);
+	}
+	.home-button {
+		background: black;
+		color: white;
+		position: unset;
+		margin-bottom: 17px;
+		font-size: 14px;
+	}
+
+	.home-button::after {
+		background: none;
+	}
+
+	.inside {
+		top: 53%;
+		left: 47%;
+		height: 46%;
+    	width: 56%;
+	}
+
+	.text {
+		top: 42%;
+    	left: 10%;
+		width: 145%;
+	}
+
+	h2.home-minititle {
+		font-size: 26px;
+		padding: 5px;
+		margin-top: 15px;
+		background-color: white;
+		display: inline-flex;
+	}
+
+	h3.blurb {
+		font-size: 20px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.about {
+		width: 89%;
+		left: 5%;
+	}
+
+	.credentials {
+		display: unset;
+	}
+
+	.contact {
+		text-align: center;
+	}
+
+	#user-name {
+		height: 35px;
+		width: 315px;
+		font-size: 18px;
+	}
+
+	#user-email {
+		height: 35px;
+		width: 315px;
+		font-size: 18px;
+	}
+
+	#user-text {
+		height: 200px;
+		width: 315px;
+		font-size: 18px;
+	}
+
+	.my-work {
+		text-align: center;
+		display: block;
+		padding-top: 75px;
+		justify-content: center;
+	}
+
+	.websites {
+		background-color: lightslategray;
+		margin-top: 15px;
+		margin: 10px
+	}
+
+	.project-button {
+		padding-bottom: 10px;
+	}
+
+	.GitHub {
+		height: unset;
+		width: unset;
+	}
+
+	.websites.web1 {
+		height: 392px;
+		width: 94%;
+	}
+
+	.websites.web2 {
+		margin-left: 32px;
+		height: auto;
+		background: none;
+		margin-top: 40px;
+	}
+
+	.websites.web1 img {
+		height: 400px;
+		width: 98%;
+	}
+
+	.websites.web3 {
+		height: 250px;
+		width: 93%;
+	}
+
+	.websites.web3 img {
+		height: 250px;
+		width: 315px;
+	}
+
+	.websites.web4 {
+		margin-left: 26px;
+		height: auto;
+		width: auto;
+		background: none;
+		margin-top: 28px;
+	}	
+	
+}
+
+@media screen and (max-width: 370px) and (min-width: 300px) {
 	
 	body {
 		background: linear-gradient(145deg, rgb(176, 186, 197) 20%, #a1dbef 20%, #a1dbef 80%, rgb(176, 186, 197) 80%);
