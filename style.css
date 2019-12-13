@@ -706,7 +706,7 @@ p.space {
 	}
 
 	.nav-links a {
-		font-size: 20px;
+		font-size: 17px;
 	}
 
 	.nav-links li {
@@ -750,6 +750,7 @@ p.space {
 		position: unset;
 		margin-bottom: 17px;
 		font-size: 14px;
+		height: 60px;
 	}
 
 	.home-button::after {
