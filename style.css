@@ -327,7 +327,6 @@ p.space {
 
 .web-links {
 	margin: 10px;
-	height: 35px;
 	width: 300px;
 	padding-top: 10px;
 }
@@ -354,14 +353,14 @@ p.space {
 
 .websites.web3 {
 	grid-area: 2/2/3/3;
-	height: 300px;
-	width: 440px;
+	height: 315px;
+	width: 400px;
 	padding-top: 15px;
 }
 
 .websites.web3 img {
-	height: 330px;
-	width: 400px;
+	height: 350px;
+	width: 365px;
 	border: black 3px solid;
 }
 
@@ -371,6 +370,25 @@ p.space {
 	align-self: center;
 	background: none;
 	border: none;
+}
+
+.websites.web5 {
+	height: 325px;
+    width: 485px;
+    padding-top: 15px;
+}
+
+.websites.web5 img {
+	height: 350px;
+	width: 450px;
+	border: black 3px solid;
+}
+
+.websites.web6 {
+	background: none;
+	border: none;
+	align-self: center;
+	margin-left: 80px;
 }
 
 .project-links {
@@ -488,6 +506,111 @@ p.space {
 	#user-text {
 		font-size: 17px;
 	}
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3000px) {
+	.logo {
+		font-size: 80px;
+	}
+
+	.nav-links a {
+		font-size: 35px;
+	}
+
+	h2.home-minititle {
+		font-size: 67px;
+	}
+
+	h3.blurb {
+		font-size: 50px;
+	}
+
+	.home-button {
+		font-size: 30px;
+		width: 340px;
+		height: 100px;
+	}
+
+	.about {
+		font-size: 50px;
+	}
+
+	#user-name {
+		width: 900px;
+		height: 85px;
+		font-size: 40px;
+	}
+
+	#user-email {
+		width: 900px;
+		height: 85px;
+		font-size: 40px;
+	}
+
+	#user-text {
+		width: 975px;
+		font-size: 40px;
+	}
+
+	#user-submit {
+		height: 100px;
+		width: 340px;
+		font-size: 40px;
+	}
+
+	.my-work {
+		grid-template-columns: 800px 800px;
+		grid-template-rows: 1000px 1000px;
+	}
+
+	.websites.web1 {
+		padding-top: 40px;
+		height: 800px;
+		border: 5px solid black;
+	}
+
+	.web1 img {
+		height: 845px;
+		width: 700px;
+		border: 5px solid black;
+	}
+
+	.websites.web3 {
+		padding-top: 40px;
+		height: 800px;
+		width: 875px;
+		border: 5px solid black;
+	}
+
+	.websites.web3 img {
+		height: 845px;
+		width: 790px;
+		border: solid black 5px;
+	}
+
+	.websites.web5 {
+		height: 845px;
+		width: 950px;
+		border: solid black 5px;
+		padding-top: 40px;
+	}
+
+	.websites.web5 img {
+		height: 850px;
+		width: 900px;
+		border: black solid 5px;
+	}
+
+	.websites.web6 {
+		margin-left: 205px;
+	}
+
+	.project-button {
+		height: 110px;
+		width: 560px;
+		font-size: 40px;
+	}
+
 }
 
 @media screen and (min-width: 1012px) and (max-width: 1390){
@@ -645,6 +768,7 @@ p.space {
 	.websites.web1 {
 		height: 390px;
 		width: 94%;
+		margin-left: 55px;
 	}
 
 	.websites.web1 img {
@@ -654,12 +778,16 @@ p.space {
 
 	.websites.web3 {
 		height: 250px;
-		width: 93%;
+		width: 88%;
 	}
 
 	.websites.web3 img {
 		height: 250px;
 		width: 315px;
+	}
+
+	.websites.web4 {
+		margin-left: 55px;
 	}
 
 	.web-links {
@@ -668,6 +796,10 @@ p.space {
 
 	.GitHub {
 		width: unset;
+	}
+
+	.websites.web5 {
+		margin-left: 55px;
 	}
 
 }
@@ -880,6 +1012,24 @@ p.space {
 		margin-top: 28px;
 	}	
 
+	.websites.web5 {
+		height: 250px;
+		width: 93%;
+	}
+
+	.websites.web5 img {
+		height: 270px;
+		width: 330px;
+	}
+
+	.websites.web6 {
+		margin-left: 30px;
+		height: auto;
+		width: auto;
+		background: none;
+		margin-top: 60px;
+	}
+
 }
 
 @media screen and (min-width: 371px) and (max-width: 400px) {
@@ -1090,6 +1240,24 @@ p.space {
 		background: none;
 		margin-top: 28px;
 	}	
+
+	.websites.web5 {
+		height: 234px;
+    	width: 92%;
+	}
+
+	.websites.web5 img {
+		width: 320px;
+		height: 260px;
+	}
+
+	.websites.web6 {
+		margin-left: 38px;
+		height: auto;
+		width: auto;
+		background: none;
+		margin-top: 65px;
+	}
 	
 }
 
@@ -1290,4 +1458,23 @@ p.space {
 		background: none;
 		margin-top: 28px;
 	}	
+
+	.websites.web5 {
+		margin-left: 2px;
+    	width: 98%;
+    	height: 235px;
+	}
+
+	.websites.web5 img {
+		width: 300px;
+		height: 240px;
+	}
+
+	.websites.web6 {
+		margin-left: 0px;
+		height: auto;
+		width: auto;
+		background: none;
+		margin-top: 30px;
+	}
 }
