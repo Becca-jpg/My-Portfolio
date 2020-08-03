@@ -4,19 +4,35 @@
 	box-sizing: border-box;
 }
 
+body, html {
+	height: 100%;
+}
+
+body {
+	background-color: #735D78;
+	background-repeat: none;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+
+}
+
 nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	min-height: 8vh;
-	background-color: black;
+	background-color: #D1B3C4;
+	height: 10%;
 }
 
 .logo {
-	color: white;
+	color: #735d78;
 	letter-spacing: 5px;
 	font-size: 25px;
 	font-family: 'Nunito', sans-serif;
+	font-weight: 900;
 }
 
 .nav-links {
@@ -24,6 +40,7 @@ nav {
 	justify-content: space-around;
 	width: 30%;
 	font-family: 'Nunito', sans-serif;
+	z-index: 1;
 }
 
 .nav-links li {
@@ -31,7 +48,7 @@ nav {
 }
 
 .nav-links a {
-	color: white;
+	color: #735d78;
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
@@ -46,49 +63,9 @@ nav {
 .burger div{
 	width: 25px;
 	height: 3px;
-	background-color: white;
+	background-color: #735d78;
 	margin: 5px;
 	transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 1026px) {
-	.nav-links {
-		width: 50%;
-	}
-}
-
-@media screen and (max-width:768px) {
-
-	body {
-		overflow-x: hidden;
-	}
-
-	.nav-links {
-		position: absolute;
-		right: 0px;
-		height: 92vh;
-		top: 8vh;
-		background-color: black;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 50%;
-		transform: translateX(100%);
-		transition: transform 0.5s ease-in;
-	}
-
-	.nav-links li {
-		opacity: 0;
-	}
-
-	.burger {
-		display: block;
-		cursor: pointer;
-	}
-}
-
-.nav-active {
-	transform: translateX(0%);
 }
 
 @keyframes navLinkFade {
@@ -114,4 +91,97 @@ nav {
 	transform: rotate(45deg) translate(-5px, -6px);
 }
 
-some bunny loves you <3
+.intro {
+	background-color: #B392AC;
+	color: #251129;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	height: 175px;
+	width: 700px;
+	margin: auto;
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	font-size: 20px;
+}
+
+.intro p {
+	padding: 20px;
+	padding-bottom: 0px;
+}
+
+button {
+	margin: 1rem;
+}
+
+.btn {
+	background-color: #F7D1CD;
+	color: #251129;
+	padding: .5em 1em;
+	border: none;
+	outline: none;
+	position: relative;
+	cursor: pointer;
+	padding: 9px;
+	font-size: 16px;
+}
+
+.btn-1::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 2px solid #F7D1CD;
+	transition: top, left, right, bottom, 100ms ease-in-out;
+}
+
+.btn-1:hover::before, 
+.btn-1:focus::before {
+	top: calc(2px * -2);
+	left: calc(2px * -2);
+	right: calc(2px * -2);
+	bottom: calc(2px * -2);
+}
+
+@media screen and (max-width: 1026px) {
+	.nav-links {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:768px) {
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: #D1B3C4;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+
+	.nav-links li {
+		opacity: 0;
+	}
+
+	.burger {
+		display: block;
+		cursor: pointer;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+/*some bunny loves you <3
