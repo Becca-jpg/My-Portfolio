@@ -3,85 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <title>Becca: Front End Developer</title>
+    <title>Becca: Web Developer</title>
 </head>
 <body>
-    <nav class="header">
-        <div class="logo">
-            <h1 class="title">Chicago Web Developer</h1>
-        </div>
+    <nav>
+        <div class="logo">Chicago Web Developer</div>
         <ul class="nav-links">
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#anchor">About Me</a>
-            </li>
-            <li>
-                <a href="Projects/index.html">Projects</a>
-            </li>
-            <li>
-                <a href="#anchor2">Contact Me</a>
-            </li>
+           <li><a href="#">Home</a></li> 
+           <li><a href="#">About</a></li> 
+           <li><a href="#">Projects</a></li> 
+           <li><a href="#">Contact</a></li> 
         </ul>
         <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
-    <div class="wrapper">
-        <div class="inside">
-            <span class="text">
-                <h2 class="home-minititle">Hi, I'm Becca! I'm a web developer that is based in the Chicagoland area.</h2><br>
-                <h3 class="blurb">I have experience working with HTML, CSS, and Javascript to design and build websites from scratch. I'm looking for new oppurtunites to challenge myself as well as learn new things. I'm avaliable for freelance projects or for working within a company long term.</h3><br>
-                
-                <a href="/Contact/index.html">
-                    <button class="home-button">Let's Work Together</button>
-                </a>
-            </span>
-        </div>
-        <div class="about" id="anchor">
-            <h2 class="home-minititle"><u>About Me</u></h2><br>
-            <p>I attended a coding bootcamp at General Assembly for Front End Web Development. There, I learned the basics of HTML, CSS, and Javascript to make a website that is both appealing and functioning correctly.</p><br>
-            
-            <p>I have completed my bootcamp but my learning is far from over. I am still working on small personal projects and constantly taking in material to continue sharpening my skills.</p><br>
 
-            <p>Other than coding, my other hobbies include painting, reading, and spending time with my family at home.</p>
-            
-            <div class="credentials">
-                <a href="https://docs.google.com/document/d/1KQQRWAhk1dnTijoQNmJAnrLMGMXdBdThDrIaVH04D68/edit?usp=sharing" target="_blank">
-                    <button class="home-button">My Resume</button> 
-                </a>
-                <a href="https://drive.google.com/file/d/1pNy5Ljz3VgsXl-6O3yLHHn_8CpbGFu1N/view?usp=sharing" target="_blank">
-                    <button class="home-button">General Assembly Certificate</button>
-                </a>
-            </div>
-        </div>
-        <div class="contact" id="anchor2">
-            <!-- ADD YOUR EMAIL AND OTHER INFO HERE INSTEAD-->
-            <!-- YOU CAN KEEP THE FORM BUT GIVE THEM OPTIONS!-->
-            <h2 class="home-minititle"><u>Contact Me</u></h2><br>
-            <div class="forms">
-                <form name="contact" method="post" data-netlify="true">
-                    
-                    <label for="user-name"></label>
-                    <input type="text" name="text" id="user-name" placeholder="Your Name"><br>
 
-                    <label for="user-email"></label>
-                    <input type="email" name="email" id="user-email" placeholder="Your Email"><br>
-
-                    <textarea name="textarea" id="user-text" cols="47" rows="10" placeholder="Your Message Here"></textarea><br>
-
-                    <label for="user-submit"></label>
-                    <input type="submit" value="submit" id="user-submit" class="home-button"><br>
-                </form>
-            </div>
-        </div>
-    </div>
     <script src="app.js"></script>
 </body>
 </html>
