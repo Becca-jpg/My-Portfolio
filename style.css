@@ -128,7 +128,7 @@ nav {
 .main-grid {
 	display: grid;
 	grid-template-columns: 350px 350px;
-	grid-template-rows: 400px 400px;
+	grid-template-rows: 450px 450px;
 	justify-content: center;
 	grid-row-gap: 30px;
 	grid-column-gap: 30px;
@@ -150,11 +150,18 @@ nav {
 }
 
 .image img {
-	height: 350px;
+	height: 370px;
 	width: 300px;
 }
 
 .title {
+	color: #251129;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+}
+
+.image a {
 	color: #251129;
 	text-align: center;
 	font-family: 'Nunito', sans-serif;
