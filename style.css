@@ -25,6 +25,7 @@ nav {
 	min-height: 8vh;
 	background-color: #D1B3C4;
 	height: 10%;
+	position: sticky;
 }
 
 .logo {
@@ -108,6 +109,56 @@ nav {
 .intro p {
 	padding: 20px;
 	padding-bottom: 0px;
+}
+
+.about {
+	background-color: #B392AC;
+	color: #251129;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	font-size: 20px;
+	height: 240px;
+	width: 900px;
+	top: 30%;
+	left: 15%;
+}
+
+.main-grid {
+	display: grid;
+	grid-template-columns: 350px 350px;
+	grid-template-rows: 400px 400px;
+	justify-content: center;
+	grid-row-gap: 30px;
+	grid-column-gap: 30px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.projects {
+	text-align: center;
+}
+
+.image {
+	background-color: #B392AC;
+	padding-top: 25px;
+}
+
+.image a {
+	color: #251129;
+}
+
+.image img {
+	height: 350px;
+	width: 300px;
+}
+
+.title {
+	color: #251129;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
 }
 
 button {
